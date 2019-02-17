@@ -72,7 +72,7 @@ namespace WPFHelloWorld.MV
                     return Items[SelectedIndexOfCollection].Name;
                 }
 
-                return Name;
+                return name;
             }
 
             set
@@ -84,7 +84,7 @@ namespace WPFHelloWorld.MV
 
                 else
                 {
-                    Name = value;
+                    name = value;
                 }
 
                 OnPropertyChanged("Name");
@@ -100,7 +100,7 @@ namespace WPFHelloWorld.MV
                     return Items[SelectedIndexOfCollection].LastName;
                 }
 
-                return LastName;
+                return lastName;
             }
 
             set
@@ -112,7 +112,7 @@ namespace WPFHelloWorld.MV
 
                 else
                 {
-                    LastName = value;
+                    lastName = value;
                 }
 
                 OnPropertyChanged("LastName");
@@ -123,7 +123,7 @@ namespace WPFHelloWorld.MV
         {
             get => addClientCommand;
 
-            set { addClientCommand = value }
+            set { addClientCommand = value; }
         }
 
         public ICommand ClearCommand
@@ -157,7 +157,7 @@ namespace WPFHelloWorld.MV
             ClearCommand = new CommandBase(new Action<Object>(ClearClient));
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public new event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)
         {
