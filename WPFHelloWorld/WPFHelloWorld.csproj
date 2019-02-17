@@ -71,6 +71,8 @@
   <ItemGroup>
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\NotifyBase.cs" />
+    <Compile Include="MV\ClientViewModel.cs" />
+    <Compile Include="MV\CommandBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

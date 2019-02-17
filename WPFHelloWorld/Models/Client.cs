@@ -36,7 +36,7 @@ namespace WPFHelloWorld.Models
             }
         }
 
-        public string Lastname
+        public string LastName
         {
             get => lastname;
 
@@ -48,6 +48,6 @@ namespace WPFHelloWorld.Models
             }
         }
 
-        public string DisplayName { get => Id + "-" + Name + " " + Lastname; }
+        public string DisplayName { get => Id + "-" + Name + " " + LastName; }
     }
 }
